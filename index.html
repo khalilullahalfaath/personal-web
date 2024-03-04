@@ -15,9 +15,9 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="gradient-background">
     <!-- Top -->
-    <section class="top gradient-background">
+    <section class="top">
       <!-- Navbar -->
       <section id="navbar">
         <nav
@@ -44,12 +44,12 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="#resume"
                     >Resume</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Works</a>
+                  <a class="nav-link active" href="#works">Works</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="#">More</a>
@@ -78,10 +78,7 @@
                 Hi, I am <br />
                 Khalilullah Al Faath
               </h1>
-              <p class="lead text-white">
-                I am a graduate in Computer Science at Telkom University,
-                Indonesia. Fast learner. Data Scientist and software developer.
-              </p>
+              <p class="lead text-white">Welcome to my personal website!</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
                   type="button"
@@ -101,47 +98,162 @@
       </div> -->
     </section>
 
+    <hr />
+
     <section id="resume">
-      <h2>Check out my resume</h2>
+      <div class="container text-center text-white">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2 class="fs-1 fw-bold">Introduction</h2>
+            <p>
+              I am a graduate in Computer Science at Telkom University,
+              Indonesia. Fast learner. A Data Scientist and Software Developer.
+            </p>
+
+            <a href="./public/bio.html">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg px-4 me-md-2 text-white"
+              >
+                My Bio
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <hr />
-    <h2>Education</h2>
-    <ul>
-      <li>SMAN 2 Makassar (2017-2020)</li>
-      <li>Bachelor of Informatics, Telkom University (2020-2024)</li>
-    </ul>
 
-    <hr />
+    <!-- Work -->
+    <section id="works">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom text-white">My works</h2>
 
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        Assistant Lectures in Mathematical Logic, Mathematical Discrete,
-        Algorithm Complexity Analysis, Calculus, Data structures at Telkom
-        University(2022-2023)
-      </li>
-      <li>Software Engineer and Data Analyst, PT LEN Industry (2024)</li>
-      <li>
-        Operating system and Data structures Practicum Assistant at Informatics
-        laboratory, Telkom University (2022-2023)
-      </li>
-    </ul>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./assets/images/tindog.png');
+                background-size: cover;
+              "
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  TinDog website
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Earth</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>3d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Node.Js</li>
-      <li>Tensorflow</li>
-    </ul>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./assets/images/mondrian.png');
+                background-size: cover;
+              "
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">
+                  Mondrian Painting
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <hr />
-    <h2>Other</h2>
-    <ul>
-      <li><a href="./public/hobbies.html">My hobbies</a></li>
-      <li><a href="./public/contact.html">Contact me</a></li>
-    </ul>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./assets/images/personal_web.png');
+                background-size: cover;
+              "
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Personal website
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p>© 2024 Alil</p>
