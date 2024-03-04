@@ -1,0 +1,88 @@
+.gradient-background {
+    background: linear-gradient(300deg, #0B0C10, #45A29E);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .top {
+    height: 100vh;
+  }
+
+  .hero-img{
+    border-radius: 15px;
+
+  }
+
+  .text-white {
+    color: white !important;
+  }
+
+  #hero > div > div{
+    margin-top: 0;
+  }
+
+  /* animation */
+  @keyframes marioRight {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @keyframes marioLeft {
+    0% { transform: translateX(100%); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  #mario-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; /* Hide any overflow content */
+  }
+
+  #mario {
+    transform: translateX(-100%);
+    animation: marioRight 10s infinite linear;
+  }
+
+
+  #mario.flip {
+    animation: marioLeft 10s infinite linear;
+  }
+  
+  
+
+  @media (max-width: 991px){
+    /* #navbar{
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    } */
+
+    .hero-img{
+      height: 12rem;
+      width: 12rem;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    #navbar{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    
+  }
