@@ -16,25 +16,62 @@
     }
   }
 
-  .top {
+.top {
     height: 100vh;
   }
 
-  .hero-img{
+.hero-img{
     border-radius: 15px;
-
+    width: 20rem;
   }
 
-  .text-white {
+.text-white {
     color: white !important;
   }
 
-  #hero > div > div{
-    margin-top: 0;
+  
+
+  
+
+  /* none */
+  @media (max-width: 576px)  {
+    .remove-border-sm {
+      border-bottom: none !important;
+    }
+
+    .hero-img{
+      width: 10rem;
+    }
+
+    .lead{
+      font-size: smaller;
+    }
   }
 
+  /* small */
+  @media (min-width: 576px) {
+
+  }
+
+    /* laptops */
+    @media (min-width: 768px)  {
+      #navbar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  
+    /* desktops */
+    @media (min-width: 1601px) {
+
+    }
+
+
   /* animation */
-  @keyframes marioRight {
+
+/* 
+@keyframes marioRight {
     0% { transform: translateX(-100%); }
     50% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
@@ -51,7 +88,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    overflow: hidden; /* Hide any overflow content */
+    overflow: hidden; 
   }
 
   #mario {
@@ -63,26 +100,5 @@
   #mario.flip {
     animation: marioLeft 10s infinite linear;
   }
-  
-  
 
-  @media (max-width: 991px){
-    /* #navbar{
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    } */
-
-    .hero-img{
-      height: 12rem;
-      width: 12rem;
-    }
-  }
-
-  @media (min-width: 1201px) {
-    #navbar{
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-    
-  }
+*/
